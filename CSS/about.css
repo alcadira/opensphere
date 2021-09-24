@@ -1,0 +1,712 @@
+header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 14vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+header .logo {
+  width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header .menu {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 4;
+  cursor: pointer;
+  position: relative;
+}
+
+header .menu .bar {
+  width: 50%;
+  height: 5px;
+  right: 0%;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .menu .bar::before {
+  content: '';
+  width: 50%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .menu .bar::after {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 30%;
+  left: 25%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  background-color: #181818;
+  width: 100%;
+}
+
+header nav ul {
+  display: none;
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "regular";
+}
+
+.open {
+  height: 100vh;
+  width: 90%;
+  z-index: 4;
+}
+
+.open .menu {
+  position: absolute;
+  z-index: 4;
+  width: 10%;
+  top: 34px;
+  left: 0%;
+}
+
+.open .menu .bar {
+  background: transparent;
+  position: absolute;
+}
+
+.open .menu .bar::before {
+  -webkit-transform: rotate(45deg) translate(14px, 14px);
+          transform: rotate(45deg) translate(14px, 14px);
+  background-color: white;
+  width: 50px;
+}
+
+.open .menu .bar::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(-17px, 14px);
+          transform: rotate(-45deg) translate(-17px, 14px);
+  width: 50px;
+  background-color: white;
+}
+
+.open nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.open nav ul {
+  padding: 40px 90px;
+  display: block;
+}
+
+.open nav ul li {
+  list-style: none;
+}
+
+.open nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 5px;
+  font-family: "regular";
+}
+
+.banner {
+  background-image: url(../img/lastpage.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner h1 {
+  font-family: "bold";
+  font-size: 30px;
+  color: white;
+}
+
+.about {
+  padding: 50px 10px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 25px;
+}
+
+.about .aboutinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .aboutinner h3 {
+  font-size: 22px;
+  font-family: "bold";
+}
+
+.about .aboutinner p {
+  font-family: "bold";
+  font-size: 18px;
+}
+
+.services {
+  padding: 40px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.services .service h3 {
+  font-size: 22px;
+  font-family: "bold";
+  margin: 20px;
+}
+
+.services p {
+  font-family: 20px;
+  font-family: "bold";
+}
+
+.services button {
+  color: white;
+  background-color: black;
+  border: none;
+  width: 42%;
+  height: 7vh;
+  margin: auto;
+}
+
+footer {
+  background-color: black;
+  padding: 25px 20px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer img {
+  width: 50%;
+  margin: auto;
+}
+
+footer hr {
+  width: 90%;
+  height: 1.5px;
+  opacity: 1;
+  color: white;
+  margin: 5px auto;
+}
+
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  text-align: left;
+  margin: auto 2px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "thin";
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  header .logo {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .menu {
+    width: 16%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
+  }
+  header .menu .bar {
+    width: 18%;
+    height: 5px;
+    left: 15%;
+    background-color: white;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header .menu .bar::before {
+    content: '';
+    width: 18%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 41%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header .menu .bar::after {
+    content: '';
+    width: 18%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 31%;
+    left: 41%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    background-color: #181818;
+    width: 100%;
+  }
+  header nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .open {
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+  }
+  .open .menu {
+    position: absolute;
+    z-index: 4;
+    width: 10%;
+    top: 36px;
+    left: 0%;
+  }
+  .open nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .open nav ul {
+    text-align: left;
+  }
+  .banner {
+    height: 100vh;
+  }
+  .banner h1 {
+    font-size: 44px;
+  }
+  .about {
+    padding: 50px 20px;
+    text-align: left;
+  }
+  .about .aboutinner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 40px auto;
+  }
+  .about .aboutinner h3 {
+    font-size: 44px;
+    font-family: "bold";
+    width: 40%;
+  }
+  .about .aboutinner p {
+    width: 60%;
+    font-family: "bold";
+  }
+  .services {
+    position: relative;
+    padding: 50px 60px;
+  }
+  .services .serve {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services .serve .service {
+    width: 55%;
+    text-align: left;
+  }
+  .services .serve .service h3 {
+    font-size: 35px;
+    font-family: "bold";
+    margin: 35px auto;
+  }
+  .services .serve .para {
+    width: 45%;
+  }
+  .services .serve .para p {
+    font-size: 21px;
+    font-family: "bold";
+  }
+  .services button {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+    height: 6vh;
+    width: 19%;
+  }
+  footer {
+    background-color: black;
+    padding: 25px 20px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer img {
+    width: 25%;
+    margin: auto;
+  }
+  footer hr {
+    width: 90%;
+    height: 1.5px;
+    opacity: 1;
+    color: white;
+    margin: 5px auto;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin: 15px auto;
+  }
+  footer ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: "thin";
+    color: white;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+  header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  header .logo {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .menu {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
+  }
+  header .menu .bar {
+    width: 40%;
+    height: 6px;
+  }
+  header .menu .bar::before {
+    content: '';
+    width: 40%;
+    height: 6px;
+    top: 37%;
+    left: 30%;
+  }
+  header .menu .bar::after {
+    content: '';
+    width: 40%;
+    height: 6px;
+    bottom: 37%;
+    left: 30%;
+  }
+  header nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .open {
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+  }
+  .open .menu {
+    position: absolute;
+    z-index: 4;
+    width: 10%;
+    top: 36px;
+    left: 0%;
+  }
+  .open nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .open nav ul {
+    text-align: left;
+  }
+  .banner {
+    height: 80vh;
+  }
+  .banner h1 {
+    font-size: 40px;
+  }
+  .about {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .about h2 {
+    font-size: 30px;
+  }
+  .about .aboutinner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 40px auto;
+  }
+  .about .aboutinner h3 {
+    font-size: 44px;
+    font-family: "bold";
+    width: 100%;
+    margin: 20px;
+  }
+  .about .aboutinner p {
+    width: 100%;
+    font-family: "bold";
+  }
+  .services {
+    position: relative;
+    padding: 50px 60px;
+  }
+  .services .serve {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services .serve .service {
+    width: 55%;
+    text-align: left;
+  }
+  .services .serve .service h3 {
+    font-size: 35px;
+    font-family: "bold";
+    margin: 35px auto;
+  }
+  .services .serve .para {
+    width: 42%;
+    text-align: left;
+  }
+  .services .serve .para p {
+    font-size: 21px;
+    font-family: "bold";
+  }
+  .services button {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+    height: 6vh;
+    width: 19%;
+  }
+  footer {
+    background-color: black;
+    padding: 25px 20px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer img {
+    width: 25%;
+    margin: auto;
+  }
+  footer hr {
+    height: 2px;
+    opacity: 1;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin: 10px auto;
+  }
+  footer ul li a {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

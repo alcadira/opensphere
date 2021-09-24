@@ -1,0 +1,24 @@
+@font-face{
+    font-family: 'bold';
+    src: url(../font/Panton-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'regular';
+    src: url(../font/Panton-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'light';
+    src: url(../font/Panton-Light.ttf);
+}
+
+@font-face{
+    font-family: 'semi';
+    src: url(../font/Panton-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: 'thin';
+    src: url(../font/Panton-Thin.ttf);
+}

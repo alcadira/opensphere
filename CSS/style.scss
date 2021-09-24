@@ -1,0 +1,985 @@
+$bold:'bold';
+$regular:'regular';
+$light:'light';
+$thin:'thin';
+$semi:'semi';
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 14vh;
+    flex-wrap: wrap;
+    width: 100%;
+    .logo{
+        width: 30%;
+        object-fit:contain;
+        
+        img{
+            width:100%;
+        }
+  
+    }
+  
+    .menu{
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       z-index: 4;
+      cursor: pointer;
+      
+      position: relative;
+      .bar{
+  
+          width: 50%;
+          height: 5px; 
+          right: 0%;
+          border-radius: 5px;
+          background-color: white;
+          transition: all .4s ease-in-out;
+  
+          &::before{
+              content: '';
+                 width: 50%;
+                 height: 5px ;
+                 background-color:white;
+                 position: absolute;
+                 border-radius: 5px;
+                 top: 30%;
+                 left: 25%;
+                 transition: all .4s ease-in-out;
+          }
+          &::after{
+              content: '';
+              width: 50%;
+              height: 5px;
+              background-color: white;
+              position: absolute;
+              border-radius: 5px;
+              bottom: 30%;
+              left: 25%;
+              transition: all .4s ease-in-out;
+          }
+          
+      }
+  
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: #181818;
+        width:100%;
+
+        ul{
+            display: none;
+          
+            list-style: none;
+            
+            text-align: center;
+           
+            li{
+                
+                a{
+                    color: white !important;
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-family: $regular;
+                }
+            }
+        }
+    }
+  
+ 
+  
+  }
+
+.open{
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+   
+ .menu{
+    
+     position: absolute;
+     z-index: 4;
+     width: 10%;
+     top: 34px;
+     left:0%;
+     
+     .bar{
+         background: transparent;
+         position: absolute;
+         &::before{
+            transform: rotate(45deg) translate(14px, 14px);
+            background-color:white;
+            width: 50px;
+         }
+         &::after{
+             width: 28px;
+             transform: rotate(-45deg) translate(-17px, 14px);
+           
+             width: 50px;
+             background-color: white;
+            
+         }
+     }
+    
+ }
+ nav{
+
+    
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   height: 100vh;
+   ul{
+     padding:40px 90px;
+     display: block;
+   
+  
+     li{
+         list-style: none;
+         a{
+              color: white;
+              text-decoration: none;
+              font-size: 22px;
+              margin: 5px;
+              font-family: $regular;
+
+         }
+        
+     }
+ }
+
+ }
+ 
+
+
+
+}
+
+// ========================banner========================
+.banner{
+background-image: url(../img/paulodybala.png);
+
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50vh;
+width: 100%;
+h1{
+    color: white;
+    font-size: 28px;
+    font-family: $semi;
+
+}
+     
+}
+
+
+// ==========================managementportfolio=====================
+
+.portifolio{
+    padding: 50px 10px;
+  h3{
+      font-size: 22px;
+      font-family: $bold;
+  }
+  .management{
+
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 25px;
+        font-family: $bold;
+    }
+    p{
+        font-family: $bold;
+        font-size: 18px;
+    }
+
+  }
+
+
+
+}
+
+
+// =========================================entertainment======================================
+
+.entertainment{
+    padding: 50px 10px;
+    align-items: center;
+    h2{
+        font-family: $regular;
+        font-size: 25px;
+    }
+        .enter{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+
+            .client{
+
+                width: 100%;
+                position: relative;
+                margin: 10px auto;
+                h3{
+                    color: white;
+                    bottom:9%;
+                    position: absolute;
+                    font-size: 15px;
+                    font-family: $bold;
+                    left: 2%;
+                }
+                hr{
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 6%;
+                    color: white;
+                    opacity: 1;
+                }
+
+                h4{
+                    position: absolute;
+                    bottom: 0%;
+                    color: white;
+                    font-size: 15px;
+                    right: 0%;
+                    font-family: $bold;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
+}
+
+// ===============================sports====================================
+
+.sports{
+    padding: 50px 10px;
+    h2{
+        font-size: 25px;
+        font-family: $regular;
+    }
+    .sport{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .sportsperson{
+
+            width: 100%;
+            position: relative;
+            margin: 20px auto;
+            img{
+                width: 100%;
+            }
+            h3{
+                color: white;
+                bottom:9%;
+                position: absolute;
+                font-size: 15px;
+                font-family: $bold;
+                left: 2%;
+            }
+            hr{
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                bottom: 6%;
+                color: white;
+                opacity: 1;
+            }
+
+            h4{
+                position: absolute;
+                bottom: 0%;
+                color: white;
+                font-size: 15px;
+                font-family: $semi;
+                right: 0%;
+            }
+        }
+    }
+
+
+}
+
+// ===================================associate brands==========================
+
+.associatebrands{
+    margin-bottom: 30px;
+        h2{
+            font-size: 22px;
+            font-family: $regular;
+        }
+        .brands{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            img{
+                width: 35%;
+                margin: auto;
+            }
+        }
+
+}
+
+// ===========================footer============================
+
+footer{
+    background-color: black;
+    padding: 25px 20px 10px;
+    align-items: center;
+    text-align: center;
+    img{
+        width: 50%;
+        margin: auto;
+
+    }
+        hr{
+            width: 90%;
+            height: 1.5px;
+            opacity: 1;
+            color: white;
+            margin:5px auto;
+        }
+
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            text-align: left;
+            margin: auto 2px;
+            a{
+                text-decoration: none;
+                font-size: 13px;
+                font-family: $thin;
+                color: white;
+              
+
+
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:1024px){
+
+    header{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        height: 14vh;
+        flex-wrap: wrap;
+        width: 100%;
+        .logo{
+            width: 15%;
+            object-fit:contain;
+            
+           
+      
+        }
+      
+        .menu{
+          width:16%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+           z-index: 4;
+          cursor: pointer;
+          
+          position: relative;
+          .bar{
+      
+              width: 18%;
+              height: 5px; 
+              left: 15%;
+              background-color: white;
+              transition: all .4s ease-in-out;
+      
+              &::before{
+                  content: '';
+                     width: 18%;
+                     height: 5px ;
+                     background-color:white;
+                     position: absolute;
+                     top: 30%;
+                     left: 41%;
+                     transition: all .4s ease-in-out;
+              }
+              &::after{
+                  content: '';
+                  width: 18%;
+                  height: 5px;
+                  background-color: white;
+                  position: absolute;
+                  bottom: 31%;
+                  left: 41%;
+                  transition: all .4s ease-in-out;
+              }
+              
+          }
+      
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: fixed;
+            background-color: #181818;
+            width:100%;
+    
+            ul{
+                display: none;
+              
+                list-style: none;
+                
+                text-align: center;
+               
+                li{
+                    
+                    a{
+                        color: white !important;
+                        text-decoration: none;
+                        font-size: 25px;
+                        font-family: $regular;
+                    }
+                }
+            }
+        }
+      
+     
+      
+      }
+
+    //   ====================================open===============
+      .open{
+        height: 100vh;
+        width: 90%;
+        z-index: 4;
+       
+     .menu{
+        
+         position: absolute;
+         z-index: 4;
+         width: 10%;
+         top: 36px;
+         left:0%;
+         
+         .bar{
+           
+             }
+             &::after{
+               
+                
+             }
+         
+        
+     }
+     nav{
+    
+        
+       flex-direction: row;
+       justify-content: center;
+       width: 100%;
+       height: 100vh;
+       ul{
+           text-align: left;
+       }
+    
+    
+     }
+     
+    
+    
+    
+    }
+
+
+    // ============================banner=====================
+    .banner{
+      height: 100vh;
+      h1{
+          font-size: 53px;
+      }
+
+
+    }
+
+    // ================portifolio=========================
+
+    .portifolio{
+            padding: 50px 0px 0px;
+
+ h3{
+     font-size: 25px;
+    
+ }
+ .management{
+    display:flex ;
+    flex-direction: row;
+    padding: 30px ;
+    h2{
+        width: 37%;
+        font-size: 44px;
+        font-family: $bold;
+    }
+    p{
+        font-size: 25px;
+        width: 60%;
+    }
+
+
+ }
+
+
+    }
+
+    .entertainment{
+        padding: 50px 60px;
+        align-items: center;
+        h2{
+            font-family: $regular;
+            font-size: 25px;
+        }
+            .enter{
+                    margin: 40px auto 10px;
+                
+    
+                .client{
+    
+                    width: 32%;
+                  
+                    h3{
+                        font-size: 25px;
+                        font-family: $bold;
+                        
+                    }
+                    hr{
+                        width: 100%;
+                        height: 2px;
+                     
+                    }
+    
+                    h4{
+                        font-size: 17px;
+                        font-family: $semi;
+                    }
+                    img{
+                        width: 100%;
+                       
+                    }
+                }
+            }
+            
+    }
+
+    // ===============================sports====================================
+
+.sports{
+    padding: 50px 80px;
+    
+    h2{
+        font-size: 25px;
+        font-family: $regular;
+    }
+    .sport{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 50px auto 20px;
+
+        .sportsperson{
+
+            width: 32%;
+            margin: 8px auto;
+           img{
+               width: 100%;
+           }
+            h3{
+               font-family: $bold;
+                font-size: 25px;
+                left: 2%;
+            }
+            hr{
+                width: 100%;
+                height: 1.5px;
+               
+            }
+
+            h4{
+              
+                font-size: 17px;
+                font-family: $semi;
+                right: 3%;
+            }
+        }
+    }
+
+
+}
+
+// ===================================associate brands==========================
+
+.associatebrands{
+    padding: 40px 70px;
+        h2{
+            font-size: 22px;
+            font-family: $regular;
+        }
+        .brands{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 60px auto 10px;
+            img{
+                width: 20%;
+                margin: 10px 35px;
+            }
+        }
+
+}
+
+// ===========================footer============================
+
+footer{
+    background-color: black;
+    padding: 25px 20px 10px;
+    align-items: center;
+    text-align: center;
+    img{
+        width: 25%;
+        margin: auto;
+
+    }
+        hr{
+            width: 90%;
+            height: 1.5px;
+            opacity: 1;
+            color: white;
+            margin:5px auto;
+        }
+
+    ul{
+       
+        text-align: center;
+        li{
+           
+            margin:15px auto;
+            a{
+                text-decoration: none;
+                font-size: 28px;
+                font-family: $thin;
+                color: white;
+              
+
+
+            }
+        }
+    }
+}
+
+
+
+}
+
+
+
+@media (min-width:569px) and (max-width:768px){
+
+    header{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        height: 14vh;
+        flex-wrap: wrap;
+        width: 100%;
+        .logo{
+            width: 15%;
+            object-fit:contain;
+        }
+      
+        .menu{
+          width:15%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+           z-index: 4;
+          cursor: pointer;
+          
+          position: relative;
+          .bar{
+      
+              width:40%;
+              height: 6px; 
+             
+      
+              &::before{
+                  content: '';
+                     width:40%;
+                     height: 6px ;
+                   
+                     top: 37%;
+                     left: 30%;
+                     
+              }
+              &::after{
+                  content: '';
+                  width: 40%;
+                  height: 6px;
+               
+                  bottom: 37%;
+                  left: 30%;
+                
+              }
+              
+          }
+      
+        }
+        nav{
+        
+    
+            ul{
+                display: none;
+              
+                list-style: none;
+                
+                text-align: center;
+               
+                li{
+                    
+                    a{
+                        color: white !important;
+                        text-decoration: none;
+                        font-size: 25px;
+                        font-family: $regular;
+                    }
+                }
+            }
+        }
+      
+     
+      
+      }
+
+       //   ====================================open===============
+       .open{
+        height: 100vh;
+        width: 90%;
+        z-index: 4;
+       
+     .menu{
+        
+         position: absolute;
+         z-index: 4;
+         width: 10%;
+         top: 36px;
+         left:0%;
+        
+     }
+     nav{
+    
+        
+       flex-direction: row;
+       ;
+       ul{
+           text-align: left;
+       }
+    
+    
+     }
+     
+    
+    
+    
+    }
+    
+    //   =========================================banner=====================
+
+.banner{
+
+    h1{
+        font-size: 44px;
+    }
+}
+
+// ====================================portfolio==============
+
+.portifolio{
+
+    padding: 50px 10px;
+    text-align: center;
+    h3{
+        font-size: 30px;
+    }
+    .management{
+     
+        h2{
+            font-size: 40px;
+            margin: 22px auto;
+        }
+
+        p{
+            font-size: 21px;
+        }
+    }
+}
+
+// =========================entertainment===========================
+.entertainment{
+    padding: 50px 60px;
+    align-items: center;
+    h2{
+        font-family: $regular;
+        font-size: 25px;
+    }
+        .enter{
+                margin: 35px auto 10px;
+            
+
+            .client{
+
+                width: 48%;
+              
+                h3{
+                    font-size: 25px;
+                    font-family: $bold;
+                    
+                }
+                hr{
+                   
+                    height: 2px;
+                 
+                }
+
+                h4{
+                    font-size: 17px;
+                    
+                }
+                img{
+                    width: 100%;
+                   
+                }
+            }
+        }
+        
+}
+
+// ========================================sports===========================
+
+.sports{
+    padding: 50px 80px;
+    
+    h2{
+        font-size: 25px;
+        font-family: $regular;
+    }
+    .sport{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 40px auto 20px;
+
+        .sportsperson{
+
+            width: 48%;
+          
+           img{
+               width: 100%;
+           }
+            h3{
+               font-family: $bold;
+                font-size: 25px;
+                left: 2%;
+            }
+            hr{
+               
+                height: 2px;
+               
+            }
+
+          
+        }
+    }
+
+
+}
+
+// ===================================associate brands==========================
+
+.associatebrands{
+    padding: 40px 70px;
+        h2{
+            font-size: 22px;
+            font-family: $regular;
+        }
+        .brands{
+           
+            justify-content: space-between;
+            align-items: center;
+            margin: 60px auto 10px;
+            img{
+                width: 20%;
+                margin: 10px 35px;
+            }
+        }
+
+}
+
+// ===========================footer============================
+
+footer{
+    background-color: black;
+    padding: 25px 20px 10px;
+    align-items: center;
+    text-align: center;
+    img{
+        width: 25%;
+        margin: auto;
+
+    }
+        hr{
+            
+            height: 2px;
+            opacity: 1;
+            
+        }
+
+    ul{
+       
+        text-align: center;
+        li{
+           
+            margin:10px auto;
+            a{
+               
+                font-size: 25px;
+                
+
+
+            }
+        }
+    }
+}
+
+
+
+
+}

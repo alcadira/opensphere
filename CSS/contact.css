@@ -1,0 +1,808 @@
+header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 14vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+header .logo {
+  width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header .menu {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 4;
+  cursor: pointer;
+  position: relative;
+}
+
+header .menu .bar {
+  width: 50%;
+  height: 5px;
+  right: 0%;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .menu .bar::before {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  top: 30%;
+  left: 25%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .menu .bar::after {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 30%;
+  left: 25%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  background-color: #181818;
+  width: 100%;
+}
+
+header nav ul {
+  display: none;
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "regular";
+}
+
+.open {
+  height: 100vh;
+  width: 90%;
+  z-index: 4;
+}
+
+.open .menu {
+  position: absolute;
+  z-index: 4;
+  width: 10%;
+  top: 34px;
+  left: 0%;
+}
+
+.open .menu .bar {
+  background: transparent;
+  position: absolute;
+}
+
+.open .menu .bar::before {
+  -webkit-transform: rotate(45deg) translate(14px, 14px);
+          transform: rotate(45deg) translate(14px, 14px);
+  background-color: white;
+  width: 50px;
+}
+
+.open .menu .bar::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(-17px, 14px);
+          transform: rotate(-45deg) translate(-17px, 14px);
+  width: 50px;
+  background-color: white;
+}
+
+.open nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.open nav ul {
+  padding: 40px 90px;
+  display: block;
+}
+
+.open nav ul li {
+  list-style: none;
+}
+
+.open nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 5px;
+  font-family: "regular";
+}
+
+.banner {
+  background-image: url(../img/contact.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 28px;
+  font-family: "semi";
+}
+
+.about {
+  padding: 50px 10px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 25px;
+  font-family: "bold";
+}
+
+.about .aboutinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .aboutinner h3 {
+  font-size: 22px;
+  font-family: "bold";
+}
+
+.about .aboutinner p {
+  font-size: 18px;
+  font-family: "bold";
+}
+
+.in-touch {
+  padding: 50px 10px;
+  text-align: center;
+}
+
+.in-touch .inn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.in-touch .inn .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.in-touch .inn .address h3 {
+  font-size: 18px;
+  font-family: "bold";
+  margin: auto 5px;
+}
+
+.in-touch .inn .address span {
+  display: block;
+  font-size: 12px;
+  font-family: "bold";
+  margin: 5px;
+}
+
+.getin-touch {
+  padding: 50px 20px;
+  background-image: url(../img/Atlas.png);
+}
+
+.getin-touch form {
+  text-align: center;
+}
+
+.getin-touch form label {
+  margin: 20px auto 0px;
+}
+
+.getin-touch form textarea, .getin-touch form input {
+  border: none;
+  border-bottom: 2px black solid;
+  font-size: 25px;
+  font-family: "bold";
+  outline: none;
+}
+
+footer {
+  background-color: black;
+  padding: 25px 20px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer img {
+  width: 50%;
+  margin: auto;
+}
+
+footer hr {
+  width: 90%;
+  height: 1.5px;
+  opacity: 1;
+  color: white;
+  margin: 5px auto;
+}
+
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  text-align: left;
+  margin: auto 2px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "thin";
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  header .logo {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .menu {
+    width: 16%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
+  }
+  header .menu .bar {
+    width: 18%;
+    height: 5px;
+    left: 15%;
+    background-color: white;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header .menu .bar::before {
+    content: '';
+    width: 18%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 41%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header .menu .bar::after {
+    content: '';
+    width: 18%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 31%;
+    left: 41%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    background-color: #181818;
+    width: 100%;
+  }
+  header nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .open {
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+  }
+  .open .menu {
+    position: absolute;
+    z-index: 4;
+    width: 10%;
+    top: 36px;
+    left: 0%;
+  }
+  .open nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .open nav ul {
+    text-align: left;
+  }
+  .open nav ul li a {
+    font-size: 35px;
+  }
+  .banner {
+    height: 100vh;
+  }
+  .banner h1 {
+    font-size: 44px;
+  }
+  .about {
+    text-align: left;
+  }
+  .about h2 {
+    font-size: 25px;
+    font-family: "bold";
+  }
+  .about .aboutinner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about .aboutinner h3 {
+    font-size: 28px;
+    width: 40%;
+  }
+  .about .aboutinner p {
+    font-size: 18px;
+    width: 60%;
+  }
+  .in-touch {
+    padding: 60px 40px;
+    text-align: left;
+  }
+  .in-touch .inn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .in-touch .inn .address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
+  .in-touch .inn .address .add {
+    position: absolute;
+    top: 2vh;
+    left: 50%;
+  }
+  .in-touch .inn .address #tel {
+    position: absolute;
+    left: 50%;
+    top: 37%;
+  }
+  .in-touch .inn .address .email {
+    position: absolute;
+    left: 50%;
+    bottom: 0vh;
+  }
+  .in-touch .inn .address h3 {
+    font-size: 30px;
+    font-family: "bold";
+    margin: 30px 30px;
+  }
+  .in-touch .inn .address p {
+    font-size: 18px;
+    font-family: "bold";
+    margin: 5px auto;
+  }
+  .in-touch .inn .address p span {
+    display: block;
+    font-size: 18px;
+    font-family: "bold";
+    margin: 5px;
+  }
+  .getin-touch {
+    padding: 50px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(../img/Atlas.png);
+    background-position: center;
+  }
+  .getin-touch form {
+    text-align: left;
+  }
+  .getin-touch form label {
+    margin: 40px auto 0px;
+    font-size: 25px;
+    font-family: "bold";
+  }
+  .getin-touch form textarea, .getin-touch form input {
+    border: none;
+    border-bottom: 2px black solid;
+    width: 60%;
+    font-size: 25px;
+    background: transparent;
+    margin: 0px auto 20px;
+    font-family: "bold";
+    outline: none;
+  }
+  .getin-touch form textarea {
+    margin: 0;
+  }
+  footer {
+    background-color: black;
+    padding: 25px 20px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer img {
+    width: 25%;
+    margin: auto;
+  }
+  footer hr {
+    width: 90%;
+    height: 1.5px;
+    opacity: 1;
+    color: white;
+    margin: 5px auto;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin: 15px auto;
+  }
+  footer ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: "thin";
+    color: white;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+  header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  header .logo {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .menu {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
+  }
+  header .menu .bar {
+    width: 40%;
+    height: 6px;
+  }
+  header .menu .bar::before {
+    content: '';
+    width: 40%;
+    height: 6px;
+    top: 37%;
+    left: 30%;
+  }
+  header .menu .bar::after {
+    content: '';
+    width: 40%;
+    height: 6px;
+    bottom: 37%;
+    left: 30%;
+  }
+  header nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .open {
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+  }
+  .open .menu {
+    position: absolute;
+    z-index: 4;
+    width: 10%;
+    top: 36px;
+    left: 0%;
+  }
+  .open nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .open nav ul {
+    text-align: left;
+  }
+  .banner {
+    height: 80vh;
+  }
+  .banner h1 {
+    font-size: 40px;
+  }
+  .in-touch {
+    padding: 60px 40px;
+    text-align: left;
+  }
+  .in-touch .inn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .in-touch .inn .address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
+  .in-touch .inn .address .add {
+    position: absolute;
+    top: 2vh;
+    left: 50%;
+  }
+  .in-touch .inn .address #tel {
+    position: absolute;
+    left: 50%;
+    top: 37%;
+  }
+  .in-touch .inn .address .email {
+    position: absolute;
+    left: 50%;
+    bottom: 0vh;
+  }
+  .in-touch .inn .address h3 {
+    font-size: 30px;
+    font-family: "bold";
+    margin: 30px 30px;
+  }
+  .in-touch .inn .address p {
+    font-size: 18px;
+    font-family: "bold";
+    margin: 5px auto;
+  }
+  .in-touch .inn .address p span {
+    display: block;
+    font-size: 18px;
+    font-family: "bold";
+    margin: 5px;
+  }
+  .getin-touch {
+    padding: 50px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(../img/Atlas.png);
+    background-position: center;
+  }
+  .getin-touch form {
+    text-align: left;
+  }
+  .getin-touch form label {
+    margin: 40px auto 0px;
+    font-size: 25px;
+    font-family: "bold";
+  }
+  .getin-touch form textarea, .getin-touch form input {
+    border: none;
+    border-bottom: 2px black solid;
+    width: 60%;
+    font-size: 25px;
+    margin: 0px auto 20px;
+    font-family: "bold";
+    background: transparent;
+    outline: none;
+  }
+  .getin-touch form textarea {
+    margin: 0;
+  }
+  footer {
+    background-color: black;
+    padding: 25px 20px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer img {
+    width: 25%;
+    margin: auto;
+  }
+  footer hr {
+    height: 2px;
+    opacity: 1;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin: 10px auto;
+  }
+  footer ul li a {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,696 @@
+header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 14vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+header .logo {
+  width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header .menu {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 4;
+  cursor: pointer;
+  position: relative;
+}
+
+header .menu .bar {
+  width: 50%;
+  height: 5px;
+  right: 0%;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .menu .bar::before {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  top: 30%;
+  left: 25%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .menu .bar::after {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 30%;
+  left: 25%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  background-color: #181818;
+  width: 100%;
+}
+
+header nav ul {
+  display: none;
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "regular";
+}
+
+.open {
+  height: 100vh;
+  width: 90%;
+  z-index: 4;
+}
+
+.open .menu {
+  position: absolute;
+  z-index: 4;
+  width: 10%;
+  top: 34px;
+  left: 0%;
+}
+
+.open .menu .bar {
+  background: transparent;
+  position: absolute;
+}
+
+.open .menu .bar::before {
+  -webkit-transform: rotate(45deg) translate(14px, 14px);
+          transform: rotate(45deg) translate(14px, 14px);
+  background-color: white;
+  width: 50px;
+}
+
+.open .menu .bar::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(-17px, 14px);
+          transform: rotate(-45deg) translate(-17px, 14px);
+  width: 50px;
+  background-color: white;
+}
+
+.open nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.open nav ul {
+  padding: 40px 90px;
+  display: block;
+}
+
+.open nav ul li {
+  list-style: none;
+}
+
+.open nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 5px;
+  font-family: "regular";
+}
+
+.banner {
+  background-image: url(../img/service.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 28px;
+  font-family: "semi";
+}
+
+.development {
+  padding: 50px 10px;
+  text-align: center;
+}
+
+.development h2 {
+  font-size: 30px;
+  font-family: "bold";
+}
+
+.development .devinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.development .devinner h3 {
+  font-size: 25px;
+  font-family: "bold";
+}
+
+.development .devinner p {
+  font-size: 20px;
+  font-family: "bold";
+}
+
+.financial-services {
+  padding: 50px 30px;
+  background-color: black;
+  text-align: center;
+}
+
+.financial-services h2 {
+  color: white;
+  font-size: 25px;
+  font-family: "bold";
+}
+
+.financial-services hr {
+  color: white;
+  opacity: 1;
+  height: 1px;
+  width: 100%;
+}
+
+.financial-services .finner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px auto;
+}
+
+.financial-services .finner h3 {
+  color: white;
+  font-size: 30px;
+  font-family: "bold";
+}
+
+.financial-services .finner p {
+  color: white;
+  font-size: 20px;
+}
+
+.portifolio-dev {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.portifolio-dev h2 {
+  font-size: 25px;
+  font-family: "bold";
+}
+
+.portifolio-dev .mapping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portifolio-dev .mapping h3 {
+  font-size: 25px;
+  font-family: "bold";
+}
+
+.portifolio-dev .mapping p {
+  font-size: 20px;
+  font-family: "bold";
+}
+
+footer {
+  background-color: black;
+  padding: 25px 20px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer img {
+  width: 50%;
+  margin: auto;
+}
+
+footer hr {
+  width: 90%;
+  height: 1.5px;
+  opacity: 1;
+  color: white;
+  margin: 5px auto;
+}
+
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  text-align: left;
+  margin: auto 2px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "thin";
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  header .logo {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .menu {
+    width: 16%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
+  }
+  header .menu .bar {
+    width: 18%;
+    height: 5px;
+    left: 15%;
+    background-color: white;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header .menu .bar::before {
+    content: '';
+    width: 18%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 41%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header .menu .bar::after {
+    content: '';
+    width: 18%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 31%;
+    left: 41%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    background-color: #181818;
+    width: 100%;
+  }
+  header nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .open {
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+  }
+  .open .menu {
+    position: absolute;
+    z-index: 4;
+    width: 10%;
+    top: 36px;
+    left: 0%;
+  }
+  .open nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .open nav ul {
+    text-align: left;
+  }
+  .banner {
+    height: 100vh;
+  }
+  .banner h1 {
+    font-size: 44px;
+  }
+  .development {
+    text-align: left;
+    padding: 70px 40px;
+  }
+  .development h2 {
+    font-size: 30px;
+    font-family: "bold";
+  }
+  .development .devinner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .development .devinner h3 {
+    font-size: 25px;
+    width: 40%;
+  }
+  .development .devinner p {
+    font-size: 20px;
+    width: 60%;
+  }
+  .financial-services {
+    padding: 50px 30px;
+    background-color: black;
+    text-align: left;
+  }
+  .financial-services h2 {
+    color: white;
+    font-size: 25px;
+    font-family: "bold";
+  }
+  .financial-services .finner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 30px auto;
+  }
+  .financial-services .finner h3 {
+    font-size: 30px;
+    width: 40%;
+  }
+  .financial-services .finner p {
+    width: 60%;
+    font-size: 20px;
+  }
+  .portifolio-dev {
+    padding: 60px 30px;
+    text-align: left;
+  }
+  .portifolio-dev h2 {
+    font-size: 25px;
+    font-family: "bold";
+  }
+  .portifolio-dev .mapping {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 40px auto;
+  }
+  .portifolio-dev .mapping h3 {
+    font-size: 25px;
+    width: 40%;
+  }
+  .portifolio-dev .mapping p {
+    font-size: 20px;
+    width: 40%;
+  }
+  footer {
+    background-color: black;
+    padding: 25px 20px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer img {
+    width: 25%;
+    margin: auto;
+  }
+  footer hr {
+    width: 90%;
+    height: 1.5px;
+    opacity: 1;
+    color: white;
+    margin: 5px auto;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin: 15px auto;
+  }
+  footer ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: "thin";
+    color: white;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+  header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  header .logo {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .menu {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
+  }
+  header .menu .bar {
+    width: 40%;
+    height: 6px;
+  }
+  header .menu .bar::before {
+    content: '';
+    width: 40%;
+    height: 6px;
+    top: 37%;
+    left: 30%;
+  }
+  header .menu .bar::after {
+    content: '';
+    width: 40%;
+    height: 6px;
+    bottom: 37%;
+    left: 30%;
+  }
+  header nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .open {
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+  }
+  .open .menu {
+    position: absolute;
+    z-index: 4;
+    width: 10%;
+    top: 36px;
+    left: 0%;
+  }
+  .open nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .open nav ul {
+    text-align: left;
+  }
+  .banner h1 {
+    font-size: 44px;
+  }
+  footer {
+    background-color: black;
+    padding: 25px 20px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer img {
+    width: 25%;
+    margin: auto;
+  }
+  footer hr {
+    height: 2px;
+    opacity: 1;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin: 10px auto;
+  }
+  footer ul li a {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=service.css.map */

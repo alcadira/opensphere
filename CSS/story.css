@@ -1,0 +1,927 @@
+header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 14vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+header .logo {
+  width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header .menu {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 4;
+  cursor: pointer;
+  position: relative;
+}
+
+header .menu .bar {
+  width: 50%;
+  height: 5px;
+  right: 0%;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .menu .bar::before {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  top: 30%;
+  left: 25%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .menu .bar::after {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 30%;
+  left: 25%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  background-color: #181818;
+  width: 100%;
+}
+
+header nav ul {
+  display: none;
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "regular";
+}
+
+.open {
+  height: 100vh;
+  width: 90%;
+  z-index: 4;
+}
+
+.open .menu {
+  position: absolute;
+  z-index: 4;
+  width: 10%;
+  top: 34px;
+  left: 0%;
+}
+
+.open .menu .bar {
+  background: transparent;
+  position: absolute;
+}
+
+.open .menu .bar::before {
+  -webkit-transform: rotate(45deg) translate(14px, 14px);
+          transform: rotate(45deg) translate(14px, 14px);
+  background-color: white;
+  width: 50px;
+}
+
+.open .menu .bar::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(-17px, 14px);
+          transform: rotate(-45deg) translate(-17px, 14px);
+  width: 50px;
+  background-color: white;
+}
+
+.open nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.open nav ul {
+  padding: 40px 90px;
+  display: block;
+}
+
+.open nav ul li {
+  list-style: none;
+}
+
+.open nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 5px;
+  font-family: "regular";
+}
+
+.banner {
+  background-image: url(../img/about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 18px;
+  font-family: "semi";
+  width: 50%;
+  margin: auto;
+}
+
+.about-sphere {
+  padding: 60px 10px;
+  text-align: center;
+}
+
+.about-sphere h2 {
+  font-size: 30px;
+  font-family: "bold";
+}
+
+.about-sphere .abt-inner {
+  margin: 40px auto;
+}
+
+.about-sphere .abt-inner h3 {
+  font-size: 25px;
+  font-family: "bold";
+}
+
+.about-sphere .abt-inner p {
+  font-size: 20px;
+  font-family: "bold";
+}
+
+.about-sphere button {
+  color: white;
+  border: none;
+  background-color: black;
+  height: 6vh;
+  width: 45%;
+}
+
+.talent-portfolio {
+  padding: 60px 10px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.talent-portfolio h2 {
+  font-size: 30px;
+  font-family: "bold";
+}
+
+.talent-portfolio .talento {
+  margin: 40px auto;
+}
+
+.talent-portfolio .talento h3 {
+  font-size: 35px;
+  font-family: "bold";
+}
+
+.talent-portfolio .talento p {
+  font-size: 16px;
+  font-family: "bold";
+}
+
+.talent-portfolio button {
+  color: white;
+  border: none;
+  background-color: black;
+  height: 6vh;
+  width: 45%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.talent-roster {
+  margin: 40px auto;
+  padding: 60px 10px;
+  text-align: center;
+}
+
+.talent-roster h2 {
+  font-size: 30px;
+  font-family: "bold";
+}
+
+.talent-roster .roster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.talent-roster .roster h3 {
+  font-size: 25px;
+  font-family: "bold";
+}
+
+.talent-roster .roster .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.talent-roster .roster .names h4 {
+  width: 48%;
+  font-size: 15px;
+  font-family: "semi";
+}
+
+.contact {
+  background-color: #fafafa;
+  margin: 40px auto;
+  padding: 60px 10px;
+  text-align: center;
+}
+
+.contact .contact-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .contact-inner h3 {
+  font-size: 20px;
+  font-family: "bold";
+}
+
+.contact .contact-inner .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .contact-inner .info h4 {
+  width: 45%;
+  font-size: 12px;
+  font-family: "semi";
+}
+
+.contact button {
+  color: white;
+  background-color: black;
+  border: none;
+  height: 6vh;
+  width: 33%;
+  margin: 15px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer {
+  background-color: black;
+  padding: 25px 20px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer img {
+  width: 50%;
+  margin: auto;
+}
+
+footer hr {
+  width: 90%;
+  height: 1.5px;
+  opacity: 1;
+  color: white;
+  margin: 5px auto;
+}
+
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  text-align: left;
+  margin: auto 2px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "thin";
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  header .logo {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .menu {
+    width: 16%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
+  }
+  header .menu .bar {
+    width: 18%;
+    height: 5px;
+    left: 15%;
+    background-color: white;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header .menu .bar::before {
+    content: '';
+    width: 18%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 41%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header .menu .bar::after {
+    content: '';
+    width: 18%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 31%;
+    left: 41%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    background-color: #181818;
+    width: 100%;
+  }
+  header nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .open {
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+  }
+  .open .menu {
+    position: absolute;
+    z-index: 4;
+    width: 10%;
+    top: 36px;
+    left: 0%;
+  }
+  .open nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .open nav ul {
+    text-align: left;
+  }
+  .banner {
+    height: 100vh;
+  }
+  .banner h1 {
+    font-size: 44px;
+    width: 50%;
+    margin: auto;
+  }
+  .about-sphere {
+    padding: 80px 10px;
+    text-align: left;
+    position: relative;
+  }
+  .about-sphere h2 {
+    font-size: 44px;
+    margin: 10px auto;
+  }
+  .about-sphere .abt-inner {
+    margin: 40px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-sphere .abt-inner h3 {
+    font-size: 25px;
+    width: 40%;
+  }
+  .about-sphere .abt-inner p {
+    font-size: 22px;
+    width: 60%;
+  }
+  .about-sphere button {
+    position: absolute;
+    right: 8%;
+    bottom: 5%;
+    width: 12%;
+  }
+  .talent-portfolio {
+    padding: 80px 10px;
+    text-align: left;
+    position: relative;
+    background-color: #fafafa;
+  }
+  .talent-portfolio hr {
+    width: 100%;
+    opacity: 1;
+  }
+  .talent-portfolio h2 {
+    font-size: 30px;
+    font-family: "bold";
+  }
+  .talent-portfolio .talento {
+    margin: 40px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .talent-portfolio .talento h3 {
+    font-size: 44px;
+    width: 40%;
+  }
+  .talent-portfolio .talento p {
+    font-size: 21px;
+    width: 60%;
+  }
+  .talent-portfolio button {
+    position: absolute;
+    right: 8%;
+    bottom: 6%;
+    width: 12%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talent-roster {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .talent-roster .roster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talent-roster .roster h3 {
+    font-size: 44px;
+    width: 40%;
+  }
+  .talent-roster .roster .names {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 60%;
+    margin: 25px auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .talent-roster .roster .names h4 {
+    width: 33%;
+    font-size: 22px;
+    font-family: "semi";
+  }
+  .contact {
+    margin: 40px auto;
+    padding: 80px 20px;
+    text-align: left;
+    position: relative;
+  }
+  .contact .contact-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact .contact-inner h3 {
+    font-size: 44px;
+    width: 40%;
+  }
+  .contact .contact-inner .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 55%;
+  }
+  .contact .contact-inner .info h4 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .contact button {
+    position: absolute;
+    width: 13%;
+    right: 8%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer {
+    background-color: black;
+    padding: 25px 20px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer img {
+    width: 25%;
+    margin: auto;
+  }
+  footer hr {
+    width: 90%;
+    height: 1.5px;
+    opacity: 1;
+    color: white;
+    margin: 5px auto;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin: 15px auto;
+  }
+  footer ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: "thin";
+    color: white;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+  header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  header .logo {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .menu {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
+  }
+  header .menu .bar {
+    width: 40%;
+    height: 6px;
+  }
+  header .menu .bar::before {
+    content: '';
+    width: 40%;
+    height: 6px;
+    top: 37%;
+    left: 30%;
+  }
+  header .menu .bar::after {
+    content: '';
+    width: 40%;
+    height: 6px;
+    bottom: 37%;
+    left: 30%;
+  }
+  header nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .open {
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+  }
+  .open .menu {
+    position: absolute;
+    z-index: 4;
+    width: 10%;
+    top: 36px;
+    left: 0%;
+  }
+  .open nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .open nav ul {
+    text-align: left;
+  }
+  .about-sphere h2 {
+    font-size: 44px;
+  }
+  .about-sphere .abt-inner h3 {
+    font-size: 40px;
+  }
+  .about-sphere .abt-inner p {
+    font-size: 20px;
+  }
+  .about-sphere button {
+    width: 20%;
+  }
+  .talent-portfolio h2 {
+    font-size: 44px;
+  }
+  .talent-portfolio .talento h3 {
+    font-size: 35px;
+  }
+  .talent-portfolio .talento p {
+    font-size: 20px;
+  }
+  .talent-portfolio button {
+    width: 20%;
+    height: 5vh;
+  }
+  .talent-roster {
+    padding: 60px 20px;
+    text-align: left;
+  }
+  .talent-roster .roster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .talent-roster .roster h3 {
+    font-size: 30px;
+    width: 40%;
+  }
+  .talent-roster .roster .names {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 60%;
+    margin: 15px auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .talent-roster .roster .names h4 {
+    width: 33%;
+    font-size: 15px;
+  }
+  .contact {
+    margin: 40px auto;
+    padding: 80px 20px;
+    text-align: left;
+    position: relative;
+  }
+  .contact .contact-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact .contact-inner h3 {
+    font-size: 44px;
+    width: 40%;
+  }
+  .contact .contact-inner .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 55%;
+  }
+  .contact .contact-inner .info h4 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .contact button {
+    position: absolute;
+    width: 13%;
+    right: 8%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer {
+    background-color: black;
+    padding: 25px 20px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer img {
+    width: 25%;
+    margin: auto;
+  }
+  footer hr {
+    height: 2px;
+    opacity: 1;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin: 10px auto;
+  }
+  footer ul li a {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=story.css.map */

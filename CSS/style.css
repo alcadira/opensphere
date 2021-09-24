@@ -1,0 +1,896 @@
+header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 14vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+header .logo {
+  width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header .menu {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 4;
+  cursor: pointer;
+  position: relative;
+}
+
+header .menu .bar {
+  width: 50%;
+  height: 5px;
+  right: 0%;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .menu .bar::before {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  top: 30%;
+  left: 25%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .menu .bar::after {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 30%;
+  left: 25%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  background-color: #181818;
+  width: 100%;
+}
+
+header nav ul {
+  display: none;
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "regular";
+}
+
+.open {
+  height: 100vh;
+  width: 90%;
+  z-index: 4;
+}
+
+.open .menu {
+  position: absolute;
+  z-index: 4;
+  width: 10%;
+  top: 34px;
+  left: 0%;
+}
+
+.open .menu .bar {
+  background: transparent;
+  position: absolute;
+}
+
+.open .menu .bar::before {
+  -webkit-transform: rotate(45deg) translate(14px, 14px);
+          transform: rotate(45deg) translate(14px, 14px);
+  background-color: white;
+  width: 50px;
+}
+
+.open .menu .bar::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(-17px, 14px);
+          transform: rotate(-45deg) translate(-17px, 14px);
+  width: 50px;
+  background-color: white;
+}
+
+.open nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.open nav ul {
+  padding: 40px 90px;
+  display: block;
+}
+
+.open nav ul li {
+  list-style: none;
+}
+
+.open nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 5px;
+  font-family: "regular";
+}
+
+.banner {
+  background-image: url(../img/paulodybala.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 28px;
+  font-family: "semi";
+}
+
+.portifolio {
+  padding: 50px 10px;
+}
+
+.portifolio h3 {
+  font-size: 22px;
+  font-family: "bold";
+}
+
+.portifolio .management {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portifolio .management h2 {
+  font-size: 25px;
+  font-family: "bold";
+}
+
+.portifolio .management p {
+  font-family: "bold";
+  font-size: 18px;
+}
+
+.entertainment {
+  padding: 50px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entertainment h2 {
+  font-family: "regular";
+  font-size: 25px;
+}
+
+.entertainment .enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.entertainment .enter .client {
+  width: 100%;
+  position: relative;
+  margin: 10px auto;
+}
+
+.entertainment .enter .client h3 {
+  color: white;
+  bottom: 9%;
+  position: absolute;
+  font-size: 15px;
+  font-family: "bold";
+  left: 2%;
+}
+
+.entertainment .enter .client hr {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 6%;
+  color: white;
+  opacity: 1;
+}
+
+.entertainment .enter .client h4 {
+  position: absolute;
+  bottom: 0%;
+  color: white;
+  font-size: 15px;
+  right: 0%;
+  font-family: "bold";
+}
+
+.entertainment .enter .client img {
+  width: 100%;
+}
+
+.sports {
+  padding: 50px 10px;
+}
+
+.sports h2 {
+  font-size: 25px;
+  font-family: "regular";
+}
+
+.sports .sport {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sports .sport .sportsperson {
+  width: 100%;
+  position: relative;
+  margin: 20px auto;
+}
+
+.sports .sport .sportsperson img {
+  width: 100%;
+}
+
+.sports .sport .sportsperson h3 {
+  color: white;
+  bottom: 9%;
+  position: absolute;
+  font-size: 15px;
+  font-family: "bold";
+  left: 2%;
+}
+
+.sports .sport .sportsperson hr {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 6%;
+  color: white;
+  opacity: 1;
+}
+
+.sports .sport .sportsperson h4 {
+  position: absolute;
+  bottom: 0%;
+  color: white;
+  font-size: 15px;
+  font-family: "semi";
+  right: 0%;
+}
+
+.associatebrands {
+  margin-bottom: 30px;
+}
+
+.associatebrands h2 {
+  font-size: 22px;
+  font-family: "regular";
+}
+
+.associatebrands .brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.associatebrands .brands img {
+  width: 35%;
+  margin: auto;
+}
+
+footer {
+  background-color: black;
+  padding: 25px 20px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer img {
+  width: 50%;
+  margin: auto;
+}
+
+footer hr {
+  width: 90%;
+  height: 1.5px;
+  opacity: 1;
+  color: white;
+  margin: 5px auto;
+}
+
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  text-align: left;
+  margin: auto 2px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "thin";
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  header .logo {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .menu {
+    width: 16%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
+  }
+  header .menu .bar {
+    width: 18%;
+    height: 5px;
+    left: 15%;
+    background-color: white;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header .menu .bar::before {
+    content: '';
+    width: 18%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 41%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header .menu .bar::after {
+    content: '';
+    width: 18%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 31%;
+    left: 41%;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    background-color: #181818;
+    width: 100%;
+  }
+  header nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .open {
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+  }
+  .open .menu {
+    position: absolute;
+    z-index: 4;
+    width: 10%;
+    top: 36px;
+    left: 0%;
+  }
+  .open nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .open nav ul {
+    text-align: left;
+  }
+  .banner {
+    height: 100vh;
+  }
+  .banner h1 {
+    font-size: 53px;
+  }
+  .portifolio {
+    padding: 50px 0px 0px;
+  }
+  .portifolio h3 {
+    font-size: 25px;
+  }
+  .portifolio .management {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 30px;
+  }
+  .portifolio .management h2 {
+    width: 37%;
+    font-size: 44px;
+    font-family: "bold";
+  }
+  .portifolio .management p {
+    font-size: 25px;
+    width: 60%;
+  }
+  .entertainment {
+    padding: 50px 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .entertainment h2 {
+    font-family: "regular";
+    font-size: 25px;
+  }
+  .entertainment .enter {
+    margin: 40px auto 10px;
+  }
+  .entertainment .enter .client {
+    width: 32%;
+  }
+  .entertainment .enter .client h3 {
+    font-size: 25px;
+    font-family: "bold";
+  }
+  .entertainment .enter .client hr {
+    width: 100%;
+    height: 2px;
+  }
+  .entertainment .enter .client h4 {
+    font-size: 17px;
+    font-family: "semi";
+  }
+  .entertainment .enter .client img {
+    width: 100%;
+  }
+  .sports {
+    padding: 50px 80px;
+  }
+  .sports h2 {
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .sports .sport {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 50px auto 20px;
+  }
+  .sports .sport .sportsperson {
+    width: 32%;
+    margin: 8px auto;
+  }
+  .sports .sport .sportsperson img {
+    width: 100%;
+  }
+  .sports .sport .sportsperson h3 {
+    font-family: "bold";
+    font-size: 25px;
+    left: 2%;
+  }
+  .sports .sport .sportsperson hr {
+    width: 100%;
+    height: 1.5px;
+  }
+  .sports .sport .sportsperson h4 {
+    font-size: 17px;
+    font-family: "semi";
+    right: 3%;
+  }
+  .associatebrands {
+    padding: 40px 70px;
+  }
+  .associatebrands h2 {
+    font-size: 22px;
+    font-family: "regular";
+  }
+  .associatebrands .brands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 60px auto 10px;
+  }
+  .associatebrands .brands img {
+    width: 20%;
+    margin: 10px 35px;
+  }
+  footer {
+    background-color: black;
+    padding: 25px 20px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer img {
+    width: 25%;
+    margin: auto;
+  }
+  footer hr {
+    width: 90%;
+    height: 1.5px;
+    opacity: 1;
+    color: white;
+    margin: 5px auto;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin: 15px auto;
+  }
+  footer ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: "thin";
+    color: white;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+  header {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  header .logo {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .menu {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+    cursor: pointer;
+    position: relative;
+  }
+  header .menu .bar {
+    width: 40%;
+    height: 6px;
+  }
+  header .menu .bar::before {
+    content: '';
+    width: 40%;
+    height: 6px;
+    top: 37%;
+    left: 30%;
+  }
+  header .menu .bar::after {
+    content: '';
+    width: 40%;
+    height: 6px;
+    bottom: 37%;
+    left: 30%;
+  }
+  header nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+  }
+  header nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .open {
+    height: 100vh;
+    width: 90%;
+    z-index: 4;
+  }
+  .open .menu {
+    position: absolute;
+    z-index: 4;
+    width: 10%;
+    top: 36px;
+    left: 0%;
+  }
+  .open nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .open nav ul {
+    text-align: left;
+  }
+  .banner h1 {
+    font-size: 44px;
+  }
+  .portifolio {
+    padding: 50px 10px;
+    text-align: center;
+  }
+  .portifolio h3 {
+    font-size: 30px;
+  }
+  .portifolio .management h2 {
+    font-size: 40px;
+    margin: 22px auto;
+  }
+  .portifolio .management p {
+    font-size: 21px;
+  }
+  .entertainment {
+    padding: 50px 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .entertainment h2 {
+    font-family: "regular";
+    font-size: 25px;
+  }
+  .entertainment .enter {
+    margin: 35px auto 10px;
+  }
+  .entertainment .enter .client {
+    width: 48%;
+  }
+  .entertainment .enter .client h3 {
+    font-size: 25px;
+    font-family: "bold";
+  }
+  .entertainment .enter .client hr {
+    height: 2px;
+  }
+  .entertainment .enter .client h4 {
+    font-size: 17px;
+  }
+  .entertainment .enter .client img {
+    width: 100%;
+  }
+  .sports {
+    padding: 50px 80px;
+  }
+  .sports h2 {
+    font-size: 25px;
+    font-family: "regular";
+  }
+  .sports .sport {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 40px auto 20px;
+  }
+  .sports .sport .sportsperson {
+    width: 48%;
+  }
+  .sports .sport .sportsperson img {
+    width: 100%;
+  }
+  .sports .sport .sportsperson h3 {
+    font-family: "bold";
+    font-size: 25px;
+    left: 2%;
+  }
+  .sports .sport .sportsperson hr {
+    height: 2px;
+  }
+  .associatebrands {
+    padding: 40px 70px;
+  }
+  .associatebrands h2 {
+    font-size: 22px;
+    font-family: "regular";
+  }
+  .associatebrands .brands {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 60px auto 10px;
+  }
+  .associatebrands .brands img {
+    width: 20%;
+    margin: 10px 35px;
+  }
+  footer {
+    background-color: black;
+    padding: 25px 20px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer img {
+    width: 25%;
+    margin: auto;
+  }
+  footer hr {
+    height: 2px;
+    opacity: 1;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    margin: 10px auto;
+  }
+  footer ul li a {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
