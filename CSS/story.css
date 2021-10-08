@@ -55,7 +55,7 @@ header .menu .bar::before {
   background-color: white;
   position: absolute;
   border-radius: 5px;
-  top: 30%;
+  top: 34%;
   left: 25%;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -68,7 +68,7 @@ header .menu .bar::after {
   background-color: white;
   position: absolute;
   border-radius: 5px;
-  bottom: 30%;
+  bottom: 34%;
   left: 25%;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -442,7 +442,7 @@ footer ul li a {
     height: 5px;
     background-color: white;
     position: absolute;
-    top: 30%;
+    top: 34%;
     left: 41%;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -453,7 +453,7 @@ footer ul li a {
     height: 5px;
     background-color: white;
     position: absolute;
-    bottom: 31%;
+    bottom: 34%;
     left: 41%;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -484,7 +484,7 @@ footer ul li a {
   header nav ul li a {
     color: white !important;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
     font-family: "regular";
   }
   .open {

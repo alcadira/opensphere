@@ -48,7 +48,7 @@ header{
                  border-radius: 5px;
                  background-color:white;
                  position: absolute;
-                 top: 30%;
+                 top: 34%;
                  left: 25%;
                  transition: all .4s ease-in-out;
           }
@@ -59,7 +59,7 @@ header{
               background-color: white;
               position: absolute;
               border-radius: 5px;
-              bottom: 30%;
+              bottom: 34%;
               left: 25%;
               transition: all .4s ease-in-out;
           }
@@ -404,6 +404,9 @@ header{
    height: 100vh;
    ul{
        text-align: left;
+       a{
+           font-size: 35px;
+       }
    }
 
 
